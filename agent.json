@@ -1,0 +1,45 @@
+{
+  "displayName": "Reflective agent",
+  "defaultLanguageCode": "en",
+  "timeZone": "America/New_York",
+  "projectNumber": 908108269217,
+  "speechToTextSettings": {
+  
+  },
+  "advancedSettings": {
+    "audioExportGcsDestination": {
+    
+    },
+    "speechSettings": {
+      "endpointerSensitivity": 90,
+      "noSpeechTimeout": {
+        "seconds": 5
+      },
+      "useTimeoutBasedEndpointing": true,
+      "models": [ {
+        "key": "en",
+        "value": "latest_long"
+      } ],
+      "enableSmartEndpointing": true
+    },
+    "playbackInterruptionSettings": {
+    
+    },
+    "loggingSettings": {
+    
+    },
+    "speechAdaptationSettings": {
+    
+    }
+  },
+  "speakerIdSettings": {
+  
+  },
+  "duplexSettings": {
+  
+  },
+  "startPlaybook": "Default Generative Playbook",
+  "webClientSettings": {
+    "boxBorderRadius": "0"
+  }
+}

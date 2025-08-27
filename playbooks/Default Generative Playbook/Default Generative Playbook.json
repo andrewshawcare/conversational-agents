@@ -1,0 +1,127 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Generative Playbook",
+  "goal": "Converse with employees to better understand and document the employee’s skills, tasks, people, and systems they perform or interact with.",
+  "outputParameterDefinitions": [ {
+    "name": "skills",
+    "description": "The list of skills the employee has",
+    "typeSchema": {
+      "inlineSchema": {
+        "type": "ARRAY",
+        "items": {
+          "inlineSchema": {
+            "type": "STRING"
+          }
+        }
+      }
+    },
+    "parameterType": {
+      "name": "skills",
+      "openapiJsonSchema": {
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      }
+    }
+  }, {
+    "name": "tasks",
+    "description": "The list of tasks the employee performs",
+    "typeSchema": {
+      "inlineSchema": {
+        "type": "ARRAY",
+        "items": {
+          "inlineSchema": {
+            "type": "STRING"
+          }
+        }
+      }
+    },
+    "parameterType": {
+      "name": "tasks",
+      "openapiJsonSchema": {
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      }
+    }
+  }, {
+    "name": "people",
+    "description": "The list of people the employee interacts with",
+    "typeSchema": {
+      "inlineSchema": {
+        "type": "ARRAY",
+        "items": {
+          "inlineSchema": {
+            "type": "STRING"
+          }
+        }
+      }
+    },
+    "parameterType": {
+      "name": "people",
+      "openapiJsonSchema": {
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      }
+    }
+  }, {
+    "name": "systems",
+    "description": "The list of systems the employee interacts with",
+    "typeSchema": {
+      "inlineSchema": {
+        "type": "ARRAY",
+        "items": {
+          "inlineSchema": {
+            "type": "STRING"
+          }
+        }
+      }
+    },
+    "parameterType": {
+      "name": "systems",
+      "openapiJsonSchema": {
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      }
+    }
+  } ],
+  "tokenCount": 189,
+  "ragSettings": {
+  
+  },
+  "instruction": {
+    "steps": [ {
+      "text": "Greet the user, then let them know you will be conducting a short interview with them."
+    }, {
+      "text": "Ask them what department they work in."
+    }, {
+      "text": "Ask them who their manager is."
+    }, {
+      "text": "Ask them what role they have."
+    }, {
+      "text": "For the following scenarios, ask them to describe the scenario, making note of any job skills, tasks, people, or systems they perform or interact with:",
+      "steps": [ {
+        "text": "A typical day in their role."
+      }, {
+        "text": "An atypical day in their role."
+      }, {
+        "text": "Add a few additional scenarios that would be relevant to their role, who their managers are, or what department they work in."
+      } ]
+    }, {
+      "text": "Summarize a list of skills, tasks, people, and systems the user performs or interacts with, and the context in which they interact with them."
+    } ]
+  },
+  "playbookType": "ROUTINE",
+  "codeBlock": {
+  
+  },
+  "speechAdaptationSettings": {
+  
+  }
+}
